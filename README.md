@@ -21,9 +21,7 @@ this theme has 2 layout options,
 ],
 ```
 
-### themes
-
-by default it is using dark theme, to use light theme do this:
+by default it is using dark theme, to use light theme only do this:
 ```php
 'assetManager' => [
 	'bundles' => [
