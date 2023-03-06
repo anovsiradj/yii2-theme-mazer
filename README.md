@@ -59,4 +59,6 @@ npm run build # env=prod (default, will generate minified css and js)
 
 # create a release
 git tag 1.0.0
+git push origin dev
+git push --tags
 ```
