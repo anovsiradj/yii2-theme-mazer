@@ -1,5 +1,6 @@
 {
-    "name": "anovsiradj/yii2-theme-admin2",
+    "name": "anovsiradj/yii2-theme-mazer",
+    "version": "1.0.0",
     "type": "package",
     "license": "MIT",
     "minimum-stability": "dev",
@@ -19,7 +20,6 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap5": "*"
     },
-    "require-dev": {},
     "repositories": [
         {
             "type": "composer",

@@ -40,19 +40,25 @@ by default it is using dark theme, to use light theme do this:
 
 ```
 php: >=7
-npm-asset/bootstrap: ~5
+yii2: *
 yii2-bootstrap5: *
 ```
 
 ### developments
 
 ```sh
+# clone this repo
 git clone ...
 
+# create fresh yii2-app-basic for development
 composer create-project --prefer-dist yiisoft/yii2-app-basic app-basic
 
-npm run build # env=prod (default)
-npm run build --env=dev
-```
+npm update
 
-env `prod` will generate minified css and js.
+# execute build
+npm run build --env=dev
+npm run build # env=prod (default, will generate minified css and js)
+
+# create a release
+git tag 1.0.0
+```
