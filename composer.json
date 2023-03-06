@@ -1,0 +1,29 @@
+{
+    "name": "anovsiradj/yii2-theme-admin2",
+    "type": "package",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "yii2\\theme\\mazer\\": "./"
+        }
+    },
+    "require": {
+        "php": ">=7",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap5": "*"
+    },
+    "require-dev": {},
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
