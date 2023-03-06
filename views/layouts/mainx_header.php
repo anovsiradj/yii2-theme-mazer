@@ -11,7 +11,6 @@ use yii\helpers\Url;
  */
 
 $themeMazer = MainAsset::register($this);
-$themeMazer->js[] = 'assets/dist/horizontal-layout.js';
 ?>
 
 <header class="mb-5">

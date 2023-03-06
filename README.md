@@ -1,5 +1,13 @@
 # Yii2 Theme Mazer
 
+### dependencies
+
+```
+php: >=7
+yii2: *
+yii2-bootstrap5: *
+```
+
 ### usages
 
 this theme has 2 layout options,
@@ -32,14 +40,6 @@ by default it is using dark theme, to use light theme only do this:
 		],
 	],
 ],
-```
-
-### dependencies
-
-```
-php: >=7
-yii2: *
-yii2-bootstrap5: *
 ```
 
 ### developments

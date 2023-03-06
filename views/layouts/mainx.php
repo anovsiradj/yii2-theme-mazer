@@ -9,6 +9,7 @@ use yii\helpers\Html;
  */
 
 $themeMazer = MainAsset::register($this);
+$themeMazer->js[] = 'assets/dist/horizontal-layout.js';
 ?>
 
 <?php $this->beginPage() ?>

@@ -28,7 +28,7 @@ $themeMazer = MainAsset::register($this);
 						<a class="nav-link active dropdown-toggle text-gray-600" href="#" data-bs-toggle="dropdown" aria-expanded="false">
 							<i class='bi bi-envelope bi-sub fs-4'></i>
 						</a>
-						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+						<ul class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton">
 							<li>
 								<h6 class="dropdown-header">Mail</h6>
 							</li>
@@ -40,7 +40,7 @@ $themeMazer = MainAsset::register($this);
 						<a class="nav-link active dropdown-toggle text-gray-600" href="#" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
 							<i class='bi bi-bell bi-sub fs-4'></i>
 						</a>
-						<ul class="dropdown-menu dropdown-menu-end notification-dropdown" aria-labelledby="dropdownMenuButton">
+						<ul class="dropdown-menu dropdown-menu-end notification-dropdown shadow-lg" aria-labelledby="dropdownMenuButton">
 							<li class="dropdown-header">
 								<h6>Notifications</h6>
 							</li>
@@ -89,7 +89,7 @@ $themeMazer = MainAsset::register($this);
 						</div>
 					</a>
 
-					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 11rem;">
+					<ul class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton" style="min-width: 11rem;">
 						<li>
 							<a class="dropdown-item" href="#">
 								<i class="icon-mid bi bi-person me-2"></i> My Profile
