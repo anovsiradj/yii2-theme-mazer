@@ -49,7 +49,9 @@ by default it is using dark theme, to use light theme only do this:
 git clone ...
 
 # create fresh yii2-app-basic for development
-composer create-project --prefer-dist yiisoft/yii2-app-basic app-basic
+composer create-project --prefer-dist yiisoft/yii2-app-basic
+
+cd yii2-theme-mazer
 
 npm update
 

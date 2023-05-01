@@ -7,7 +7,7 @@
     "bootstrap": "~5",
     "bootstrap-icons": "~1",
     "perfect-scrollbar": "~1",
-    "mazer": "github:zuramai/mazer#main"
+    "mazer": "github:zuramai/mazer#semver:~2"
   },
   "devDependencies": {
     "resolve-url-loader": "^5.0.0",
