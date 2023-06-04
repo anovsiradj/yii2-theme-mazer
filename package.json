@@ -11,9 +11,9 @@
   },
   "devDependencies": {
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.62.0",
-    "sass-loader": "^13.3.1",
-    "ts-loader": "^9.4.2",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "ts-loader": "^9.4.3",
     "typescript": "^5.0.4"
   }
 }
