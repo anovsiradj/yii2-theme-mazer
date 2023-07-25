@@ -2,6 +2,7 @@
 @import "~mazer/src/assets/scss/variables";
 
 // Bootstrap + Icons
+$bootstrap-icons-font-src: url('~bootstrap-icons/font/fonts/bootstrap-icons.woff2') format("woff") !default;
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons";
 
@@ -11,7 +12,7 @@ body .bi::before, [class^=bi-]::before, [class*=" bi-"]::before {
 }
 
 // Import fonts
-@import "~mazer/src/assets/scss/fonts";
+@import "./fonts";
 
 // Perfect Scrollbar
 @import "~perfect-scrollbar/css/perfect-scrollbar.css";

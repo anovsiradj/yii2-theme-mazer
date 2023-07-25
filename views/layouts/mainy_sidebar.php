@@ -17,7 +17,9 @@ $themeMazer = MainAsset::register($this);
 		let href = this.getAttribute('href');
 		if (href === '#') return;
 		if (this.href === window.location.href) {
-			$(this).parentsUntil('#sidebar ul.menu').addClass('active');
+			$(this).parentsUntil('#sidebar', 'li').each(function() {
+				$(this).addClass('active').children('ul').addClass('submenu-open');
+			});
 		}
 	});
 JS) ?>

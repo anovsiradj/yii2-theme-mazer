@@ -19,7 +19,6 @@ class MainAsset extends \yii\web\AssetBundle
 	public $publishOptions = [];
 
 	public $depends = [
-		\yii\web\YiiAsset::class,
 		\yii\web\JqueryAsset::class,
 	];
 }

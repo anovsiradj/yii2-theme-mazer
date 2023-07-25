@@ -1,16 +1,10 @@
 
-require('mazer/src/assets/js/initTheme')
+import 'script-loader!mazer/src/assets/static/js/initTheme.js';
+import 'script-loader!mazer/src/assets/static/js/components/dark.js';
+import 'mazer/src/assets/static/js/components/sidebar.js';
 
-// Mazer internal JS. Include this in your project to get
-// the sidebar running.
-require("mazer/src/assets/js/components/dark")
+import bootstrap from "bootstrap/dist/js/bootstrap.bundle.js"
+globalThis.Bootstrap = globalThis.bootstrap = bootstrap;
 
-// Don't forget to load bootstrap js in your project
-// Here, we load it in our app.js
-
-globalThis.Bootstrap = require('bootstrap/dist/js/bootstrap.js');
-
-// We could import PerfectScrollbar directly in the sidebar module
-globalThis.PerfectScrollbar = require("perfect-scrollbar/dist/perfect-scrollbar.js")
-
-globalThis.MazerSidebar = require("mazer/src/assets/js/components/sidebar")
+import PerfectScrollbar from "perfect-scrollbar/dist/perfect-scrollbar.js";
+globalThis.PerfectScrollbar = PerfectScrollbar;
