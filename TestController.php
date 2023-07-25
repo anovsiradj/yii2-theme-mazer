@@ -2,7 +2,7 @@
 
 namespace yii2\theme\mazer;
 
-class DebugController extends \yii\web\Controller
+class TestController extends \yii\web\Controller
 {
 	public function init()
 	{
@@ -14,7 +14,7 @@ class DebugController extends \yii\web\Controller
 	public function actionIndex($layout = null, $render = null)
 	{
 		$layout ??= $this->layout;
-		$render ??= '/site/index';
+		$render ??= '@vendor/anovsiradj/yii2-theme-mazer/views/site/index';
 
 		$this->layout = $layout;
 		return $this->render($render);

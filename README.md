@@ -65,15 +65,14 @@ git push origin dev
 git push --tags
 ```
 
-debugging or displaying preset views for testing
+### testing
 
 ```php
-class SiteController
-{
-	public function actionIndex($layout = null, $render = null)
-	{
-	    $this->layout = $layout ?? $this->layout;
-	    return $this->render($render ?? 'index');
-	}
-}
+[
+	'controllerMap' => [
+		'mazer' => \yii2\theme\mazer\TestController::class,
+	],
+]
 ```
+
+then visit `localhost/yii2-app-basic/mazer/index`
