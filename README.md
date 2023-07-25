@@ -64,3 +64,16 @@ git tag 1.0.0
 git push origin dev
 git push --tags
 ```
+
+debugging or displaying preset views for testing
+
+```php
+class SiteController
+{
+	public function actionIndex($layout = null, $render = null)
+	{
+	    $this->layout = $layout ?? $this->layout;
+	    return $this->render($render ?? 'index');
+	}
+}
+```
