@@ -1,8 +1,10 @@
 const path = require('node:path'); 
 const realpath = (dest) => path.normalize(path.join(__dirname, dest));
 
-const env = (process.env.npm_config_env || 'prod');
+const env = (process.env.NODE_ENV);
 const mix = require('laravel-mix');
+
+console.debug(env);
 
 mix.disableNotifications();
 
@@ -44,6 +46,7 @@ mix.webpackConfig({
 			realpath('assets/src'),
 		],
 		alias: {
+			// dont work, dont know //
 			'@': realpath('node_modules/mazer/src'),
 			'@/assets': realpath('node_modules/mazer/src/assets'),
 		}
@@ -60,10 +63,12 @@ mix
 	.js('assets/src/app.js', ".")
 	.js("./node_modules/mazer/src/assets/static/js/pages/horizontal-layout.js", ".")
 
-if (env === 'prod') {
+if (env === 'production') {
 	mix.minify([
 		'assets/dist/app.css',
 		'assets/dist/app-dark.css',
+		'assets/dist/auth.css',
 		'assets/dist/assets/dist/app.js',
-	])
+		'assets/dist/assets/dist/horizontal-layout.js',
+	]);
 }

@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "npx mix"
+    "test": "npx mix",
+    "prod": "cross-env NODE_ENV=production npx mix"
   },
   "devDependencies": {
     "@sweetalert2/theme-dark": "^5.0.15",
@@ -15,6 +16,7 @@
     "script-loader": "^0.7.2",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
+    "cross-env": "~7",
     "webpack": "~5"
   },
   "overrides": {

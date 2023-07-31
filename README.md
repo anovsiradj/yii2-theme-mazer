@@ -53,11 +53,11 @@ composer create-project --prefer-dist yiisoft/yii2-app-basic
 
 cd yii2-theme-mazer
 
-npm update
+npm install
 
-# execute build
-npm run build --env=dev
-npm run build # env=prod (default, will generate minified css and js)
+# must in this order, cause webpack-mix is broken.
+npm run prod
+npm run test
 
 # create a release
 git tag 1.0.0
