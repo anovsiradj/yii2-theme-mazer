@@ -1,7 +1,5 @@
 {
     "name": "anovsiradj/yii2-theme-mazer",
-    "version": "2.1.1",
-    "type": "package",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
