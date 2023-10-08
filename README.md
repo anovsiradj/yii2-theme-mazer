@@ -1,5 +1,8 @@
 # Yii2 Theme Mazer
 
+- <https://zuramai.github.io/mazer/demo/index.html>
+- <https://github.com/zuramai/mazer>
+
 ### dependencies
 
 ```
@@ -16,6 +19,11 @@ this theme has 2 layout options,
 ```php
 'layout' => 'mainy', // or 'mainx'
 'components' => [
+	'assetManager' => [
+		'forceCopy' => !YII_ENV_PROD,
+		'linkAssets' => true,
+		'appendTimestamp' => true,
+	],
 	'view' => [
 		'theme' => [
 			'pathMap' => [
@@ -48,12 +56,13 @@ by default it is using dark theme, to use light theme only do this:
 # clone this repo
 git clone ...
 
-# create fresh yii2-app-basic for development
+# create fresh yii2-app-basic for testing
 composer create-project --prefer-dist yiisoft/yii2-app-basic
 
 cd yii2-theme-mazer
 
 npm install
+# npm update --save-dev --dev
 
 # must in this order, cause webpack-mix is broken.
 npm run prod
@@ -65,13 +74,27 @@ git push origin dev
 git push --tags
 ```
 
-### testing
+add this to `./config/web.php`:
 
 ```php
 [
 	'controllerMap' => [
 		'mazer' => \yii2\theme\mazer\TestController::class,
 	],
+]
+```
+
+add this to `./composer.json`:
+
+```
+"repositories": [
+    {
+        "type": "path",
+        "url": "../yii2-theme-mazer",
+        "options": {
+            "symlink": true
+        }
+    }
 ]
 ```
 

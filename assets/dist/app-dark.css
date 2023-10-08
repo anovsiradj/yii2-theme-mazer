@@ -490,12 +490,12 @@ html[data-bs-theme=dark] div:where(.swal2-container) button:where(.swal2-styled)
   border: 0;
 }
 html[data-bs-theme=dark] div:where(.swal2-container) div:where(.swal2-footer) {
-  justify-content: center;
   margin: 1em 0 0;
   padding: 1em 1em 0;
   border-top: 1px solid #555;
   color: #bbbbbb;
   font-size: 1em;
+  text-align: center;
 }
 html[data-bs-theme=dark] div:where(.swal2-container) .swal2-timer-progress-bar-container {
   position: absolute;
@@ -1306,6 +1306,7 @@ html[data-bs-theme=dark] [data-bs-theme=light] {
   --bs-link-hover-color: #697ecb;
   --bs-link-hover-color-rgb: 105, 126, 203;
   --bs-code-color: #d63384;
+  --bs-highlight-color: #c2c2d9;
   --bs-highlight-bg: #fcf8e3;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -1376,6 +1377,8 @@ html[data-bs-theme=dark] [data-bs-theme=dark] {
   --bs-link-color-rgb: 142, 158, 216;
   --bs-link-hover-color-rgb: 180, 191, 229;
   --bs-code-color: #e685b5;
+  --bs-highlight-color: #adb5bd;
+  --bs-highlight-bg: #664d03;
   --bs-border-color: #495057;
   --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
   --bs-form-valid-color: #75b798;
@@ -1508,6 +1511,7 @@ html[data-bs-theme=dark] small, html[data-bs-theme=dark] .small {
 }
 html[data-bs-theme=dark] mark, html[data-bs-theme=dark] .mark {
   padding: 0.2em;
+  color: var(--bs-highlight-color);
   background-color: var(--bs-highlight-bg);
 }
 html[data-bs-theme=dark] sub,
@@ -1925,7 +1929,7 @@ html[data-bs-theme=dark] .row-cols-2 > * {
 }
 html[data-bs-theme=dark] .row-cols-3 > * {
   flex: 0 0 auto;
-  width: 33.3333333333%;
+  width: 33.33333333%;
 }
 html[data-bs-theme=dark] .row-cols-4 > * {
   flex: 0 0 auto;
@@ -1937,7 +1941,7 @@ html[data-bs-theme=dark] .row-cols-5 > * {
 }
 html[data-bs-theme=dark] .row-cols-6 > * {
   flex: 0 0 auto;
-  width: 16.6666666667%;
+  width: 16.66666667%;
 }
 html[data-bs-theme=dark] .col-auto {
   flex: 0 0 auto;
@@ -2090,7 +2094,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-sm-3 > * {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33.33333333%;
   }
   html[data-bs-theme=dark] .row-cols-sm-4 > * {
     flex: 0 0 auto;
@@ -2102,7 +2106,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-sm-6 > * {
     flex: 0 0 auto;
-    width: 16.6666666667%;
+    width: 16.66666667%;
   }
   html[data-bs-theme=dark] .col-sm-auto {
     flex: 0 0 auto;
@@ -2259,7 +2263,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-md-3 > * {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33.33333333%;
   }
   html[data-bs-theme=dark] .row-cols-md-4 > * {
     flex: 0 0 auto;
@@ -2271,7 +2275,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-md-6 > * {
     flex: 0 0 auto;
-    width: 16.6666666667%;
+    width: 16.66666667%;
   }
   html[data-bs-theme=dark] .col-md-auto {
     flex: 0 0 auto;
@@ -2428,7 +2432,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-lg-3 > * {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33.33333333%;
   }
   html[data-bs-theme=dark] .row-cols-lg-4 > * {
     flex: 0 0 auto;
@@ -2440,7 +2444,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-lg-6 > * {
     flex: 0 0 auto;
-    width: 16.6666666667%;
+    width: 16.66666667%;
   }
   html[data-bs-theme=dark] .col-lg-auto {
     flex: 0 0 auto;
@@ -2597,7 +2601,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-xl-3 > * {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33.33333333%;
   }
   html[data-bs-theme=dark] .row-cols-xl-4 > * {
     flex: 0 0 auto;
@@ -2609,7 +2613,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-xl-6 > * {
     flex: 0 0 auto;
-    width: 16.6666666667%;
+    width: 16.66666667%;
   }
   html[data-bs-theme=dark] .col-xl-auto {
     flex: 0 0 auto;
@@ -2766,7 +2770,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-xxl-3 > * {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33.33333333%;
   }
   html[data-bs-theme=dark] .row-cols-xxl-4 > * {
     flex: 0 0 auto;
@@ -2778,7 +2782,7 @@ html[data-bs-theme=dark] .gy-5 {
   }
   html[data-bs-theme=dark] .row-cols-xxl-6 > * {
     flex: 0 0 auto;
-    width: 16.6666666667%;
+    width: 16.66666667%;
   }
   html[data-bs-theme=dark] .col-xxl-auto {
     flex: 0 0 auto;
@@ -3383,6 +3387,7 @@ html[data-bs-theme=dark] .form-check-reverse .form-check-input {
 }
 html[data-bs-theme=dark] .form-check-input {
   --bs-form-check-bg: #20202d;
+  flex-shrink: 0;
   width: 1.2em;
   height: 1.2em;
   margin-top: 0.15em;
@@ -6290,7 +6295,7 @@ html[data-bs-theme=dark] .toast-body {
   word-wrap: break-word;
 }
 html[data-bs-theme=dark] .modal {
-  --bs-modal-zindex: 1050;
+  --bs-modal-zindex: 1055;
   --bs-modal-width: 500px;
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
@@ -6372,7 +6377,7 @@ html[data-bs-theme=dark] .modal-content {
   outline: 0;
 }
 html[data-bs-theme=dark] .modal-backdrop {
-  --bs-backdrop-zindex: 1040;
+  --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
   --bs-backdrop-opacity: 0.5;
   position: fixed;
@@ -6571,7 +6576,7 @@ html[data-bs-theme=dark] .modal-fullscreen .modal-body {
   }
 }
 html[data-bs-theme=dark] .tooltip {
-  --bs-tooltip-zindex: 1070;
+  --bs-tooltip-zindex: 1080;
   --bs-tooltip-max-width: 200px;
   --bs-tooltip-padding-x: 0.5rem;
   --bs-tooltip-padding-y: 0.25rem;
@@ -6663,7 +6668,7 @@ html[data-bs-theme=dark] .tooltip-inner {
   border-radius: var(--bs-tooltip-border-radius);
 }
 html[data-bs-theme=dark] .popover {
-  --bs-popover-zindex: 1060;
+  --bs-popover-zindex: 1070;
   --bs-popover-max-width: 276px;
   --bs-popover-font-size: 0.875rem;
   --bs-popover-bg: #fff;
@@ -7803,6 +7808,16 @@ html[data-bs-theme=dark] .avatar.avatar-xl .avatar-content, html[data-bs-theme=d
   width: 60px;
   height: 60px;
   font-size: 1.4rem;
+}
+html[data-bs-theme=dark] .avatar.avatar-2xl .avatar-content, html[data-bs-theme=dark] .avatar.avatar-2xl img {
+  width: 120px;
+  height: 120px;
+  font-size: 1.6rem;
+}
+html[data-bs-theme=dark] .avatar.avatar-3xl .avatar-content, html[data-bs-theme=dark] .avatar.avatar-3xl img {
+  width: 180px;
+  height: 180px;
+  font-size: 1.8rem;
 }
 html[data-bs-theme=dark] .btn .badge {
   border-radius: 50%;
