@@ -38,6 +38,7 @@ this theme has 2 layout options,
 ```
 
 by default it is using dark theme, to use light theme only do this:
+
 ```php
 'assetManager' => [
 	'bundles' => [
@@ -49,6 +50,11 @@ by default it is using dark theme, to use light theme only do this:
 	],
 ],
 ```
+
+to override views, copy and paste (copas) file from `./vendor/anovsiradj/yii2-theme-mazer/views` to `./views/`.
+
+for example, override `main_sidebar.php`.
+copas from `./vendor/anovsiradj/yii2-theme-mazer/views/main_sidebar.php` to `./views/main_sidebar.php`.
 
 ### developments
 
