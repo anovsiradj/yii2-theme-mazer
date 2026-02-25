@@ -3,15 +3,11 @@
 - <https://zuramai.github.io/mazer/demo/index.html>
 - <https://github.com/zuramai/mazer>
 
-### dependencies
+### requirements
 
-```
-php: >=7
-yii2: *
-yii2-bootstrap5: *
-```
+see `./composer.json`
 
-### usages
+### installation
 
 this theme has 2 layout options,
 `mainx` (horizontal) and `mainy` (vertical).
@@ -59,12 +55,7 @@ copas from `./vendor/anovsiradj/yii2-theme-mazer/views/main_sidebar.php` to `./v
 ### developments
 
 ```sh
-# clone this repo
 git clone ...
-
-# create fresh yii2-app-basic for testing
-composer create-project --prefer-dist yiisoft/yii2-app-basic
-
 cd yii2-theme-mazer
 
 npm install
@@ -73,6 +64,9 @@ npm install
 # must in this order, cause webpack-mix is broken.
 npm run prod
 npm run test
+
+# create fresh yii2-app-basic for debugging
+composer create-project --prefer-dist yiisoft/yii2-app-basic
 
 # create a release
 git tag 1.0.0
